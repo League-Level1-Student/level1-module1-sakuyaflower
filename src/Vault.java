@@ -1,14 +1,13 @@
+import java.util.Random;
 
 public class Vault {
- int code = 5459;
+	int code = new Random().nextInt(1000000);
 
-	public static void main(String[] args) {
-
-	
-	
-	
-	
-	
-	
-}
+	boolean tryCode(int guess) {
+		if (guess == code) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
